@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-solana-dark text-white;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    @apply bg-gradient-to-r from-solana-purple via-twitter to-solana-green bg-clip-text text-transparent;
+  }
+  
+  .gradient-border {
+    position: relative;
+    background: linear-gradient(to right, #9945FF, #14F195);
+    padding: 2px;
+    border-radius: 12px;
+  }
+  
+  .gradient-border-inner {
+    @apply bg-solana-gray rounded-[10px];
+  }
+}
+
+.code-block {
+  font-family: 'Monaco', 'Courier New', monospace;
+}
+
+.glow-purple {
+  box-shadow: 0 0 30px rgba(153, 69, 255, 0.5);
+}
+
+.glow-green {
+  box-shadow: 0 0 30px rgba(20, 241, 149, 0.5);
+}
